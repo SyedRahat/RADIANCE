@@ -1,0 +1,16 @@
+Template Code,Subject,Body (HTML),Is Active
+REQ_SUBMITTED,[TVRMS] {TVID} submitted - {Title},"<p>Dear {RequesterName},</p><p>Your Test Vehicle request <b>{TVID}</b> has been submitted and is now with the APPG team for review.</p><p><a href='{Link}'>Open request</a></p><p>Regards,<br/>TV Request Management System</p>",Yes
+NEW_REQUEST_APPG,[TVRMS] New request {TVID} waiting for review,"<p>Hello APPG team,</p><p>A new request <b>{TVID} - {Title}</b> was submitted by {RequesterName}.</p><p><a href='{Link}'>Review now</a></p>",Yes
+REVIEW_STARTED,[TVRMS] {TVID} is under APPG review,"<p>Dear {RequesterName},</p><p>Your request <b>{TVID}</b> is now under review.</p><p><a href='{Link}'>Open request</a></p>",Yes
+MORE_INFO,[TVRMS] Action needed: more information for {TVID},"<p>Dear {RequesterName},</p><p>The APPG team needs more information for <b>{TVID}</b>:</p><blockquote>{Comments}</blockquote><p>Please update and resubmit. <a href='{Link}'>Open request</a></p>",Yes
+REJECTED,[TVRMS] {TVID} rejected,"<p>Dear {RequesterName},</p><p>Your request <b>{TVID}</b> was rejected.</p><p>Reason: {Comments}</p>",Yes
+ALIGNMENT_UPDATE,[TVRMS] {TVID} internal alignment update,"<p>Request <b>{TVID}</b> is now in status <b>{Status}</b>.</p><p>{Comments}</p><p><a href='{Link}'>Open request</a></p>",Yes
+FUNDING_APPROVED,[TVRMS] Funding approved for {TVID},"<p>Good news! Funding for <b>{TVID}</b> was approved.</p><p>Comments: {Comments}</p><p><a href='{Link}'>Open request</a></p>",Yes
+FUNDING_REJECTED,[TVRMS] Funding rejected for {TVID},"<p>Funding for <b>{TVID}</b> was rejected.</p><p>Reason: {Comments}</p>",Yes
+STATUS_UPDATE,[TVRMS] {TVID} status changed to {Status},"<p>Request <b>{TVID}</b> is now <b>{Status}</b>.</p><p>{Comments}</p><p><a href='{Link}'>Open request</a></p>",Yes
+EXCEPTION_RAISED,[TVRMS] High severity issue on {TVID},"<p>A high severity issue was raised on <b>{TVID}</b>:</p><p>{Comments}</p><p><a href='{Link}'>Open request</a></p>",Yes
+REMINDER,[TVRMS] Reminder: {TVID} is waiting for your action,"<p>Request <b>{TVID}</b> has been in status <b>{Status}</b> for {Days} days and needs your action.</p><p><a href='{Link}'>Open request</a></p>",Yes
+ESCALATION,[TVRMS] Escalation: {TVID} pending for {Days} days,"<p>Request <b>{TVID}</b> has been waiting for {Days} days for action by {ActionOwner}. Please help to move it forward.</p><p><a href='{Link}'>Open request</a></p>",Yes
+CANCELLED,[TVRMS] {TVID} cancelled,"<p>Request <b>{TVID}</b> was cancelled.</p><p>Reason: {Comments}</p>",Yes
+COMPLETED,[TVRMS] {TVID} completed - final report available,"<p>Request <b>{TVID} - {Title}</b> is closed.</p><p>Final report: <a href='{ReportLink}'>open</a></p><p>Summary PDF: <a href='{PdfLink}'>open</a></p>",Yes
+NEXT_OCCURRENCE,[TVRMS] Next occurrence due for recurring request {TVID},"<p>Your recurring request <b>{TVID}</b> is closed. Please create the next occurrence using Request Type = Repeat.</p>",Yes

@@ -1,0 +1,4 @@
+Name,Cost Center Code,Cost Center Owner (email),Owner Manager (email),Department,Is Active
+CC-4100 Etch R&D,4100,maria.lopez@lam.com,james.wilson@lam.com,Process Engineering,Yes
+CC-4200 Metrology,4200,susan.lee@lam.com,james.wilson@lam.com,Metrology,Yes
+CC-4300 Deposition R&D,4300,kevin.brown@lam.com,james.wilson@lam.com,Deposition R&D,Yes

@@ -1,0 +1,6 @@
+Name,Value,Description
+ReminderAfterDays,3,Send reminder if a pending action is older than this many days
+EscalationAfterDays,5,Escalate to the manager after this many days
+AutoCancelAfterDays,30,Auto-cancel a request in More Info Required after this many days
+HighValueFundingLimit,50000,Above this amount (USD) a second-level funding approval is needed
+RetentionYears,7,Record retention in years
