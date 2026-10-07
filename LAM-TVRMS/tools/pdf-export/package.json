@@ -1,9 +1,0 @@
-{
-  "name": "tvrms-pdf-export",
-  "private": true,
-  "description": "Converts the guide (.md) and sample data (.csv) into PDFs",
-  "dependencies": {
-    "mermaid": "11.17.2",
-    "playwright": "1.56.1"
-  }
-}

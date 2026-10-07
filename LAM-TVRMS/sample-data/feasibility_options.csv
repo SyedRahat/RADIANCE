@@ -1,6 +1,0 @@
-Option Name,TV Request,Research Institution,Capability Score,Quoted Cost,Timeline (weeks),Constraints,Recommendation,Is Selected
-Option A - Stanford Nanofab,TV-2026-00015,Stanford Nanofab Lab,5,39500,10,Lab free from Nov,Recommended,Yes
-Option B - Fraunhofer,TV-2026-00015,Fraunhofer IPMS,4,35000,16,Shipping to Germany,Alternative,No
-Option C - Internal Lab,TV-2026-00015,Internal Lab Fremont,3,22000,20,Tool booked till Jan,Not Recommended,No
-Option A - IMEC,TV-2026-00012,IMEC,5,62000,12,EUV slot in Dec,Recommended,Yes
-Option A - Internal Lab,TV-2026-00003,Internal Lab Fremont,4,28000,8,None,Recommended,Yes
