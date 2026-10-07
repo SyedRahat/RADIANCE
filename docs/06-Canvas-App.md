@@ -248,7 +248,7 @@ Action buttons (visible by role and status):
 | Put On Hold / Resume | `IsAPPG` | On Hold / In Execution |
 | Complete Execution | `IsAPPG && 'Request Status' = In Execution` | Execution Completed |
 | Close Request | `IsAPPG && 'Request Status' = Execution Completed && Final Report uploaded` | Closed (flow F07) |
-| Cancel | `(Requester = me && 'Request Status' in [Draft, Submitted, More Info Required]) || IsAPPG` | Cancelled |
+| Cancel | `(Requester = me && 'Request Status' in [Draft, Submitted, More Info Required]) \|\| IsAPPG` | Cancelled |
 | Export to PDF | everyone | calls flow F06 |
 
 Example "Reject" with mandatory reason:
