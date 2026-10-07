@@ -7,6 +7,7 @@ How to create a table: **Solution → New → Table → Table**, give the name, 
 
 ```mermaid
 erDiagram
+  direction LR
   TV_REQUEST ||--o{ FEASIBILITY_OPTION : has
   TV_REQUEST ||--o{ FUNDING_APPROVAL : has
   TV_REQUEST ||--o{ MILESTONE : has
@@ -109,7 +110,7 @@ Turn on: **Auditing**, **Track changes**. Ownership: **User or team**.
 | 21 | Expected Completion Date | `tvr_expectedcompletion` | Date only | execution | 2027-02-28 |
 | 22 | Overall Progress % | `tvr_progress` | Whole number 0-100 | execution | 60 |
 | 23 | Actual Total Cost (USD) | `tvr_actualcost` | Currency (Rollup of Cost Entry) | auto | 37,800 |
-| 24 | SharePoint Folder URL | `tvr_spfolderurl` | URL | auto | https://lam.sharepoint.com/sites/TVRMS/TV Requests/TV-2026-00015 |
+| 24 | SharePoint Folder URL | `tvr_spfolderurl` | URL | auto | `https://lam.sharepoint.com/sites/TVRMS/TV Requests/TV-2026-00015` |
 | 25 | Submitted On | `tvr_submittedon` | Date and time | auto | 2026-10-12 10:05 |
 | 26 | Status Changed On | `tvr_statuschangedon` | Date and time | auto | used for reminders/aging |
 | 27 | Closed On | `tvr_closedon` | Date and time | auto | 2027-03-05 |
@@ -276,9 +277,17 @@ Even if the Canvas app checks fields, also add these (so data is safe from any e
 ## 8. How to load sample data
 
 Files in [`/sample-data`](../sample-data). Load in this order (because of lookups):
-1. `departments.csv` → 2. `locations.csv` → 3. `research_institutions.csv` →
-4. `cost_centers.csv` → 5. `app_settings.csv` → 6. `email_templates.csv` →
-7. `tv_requests.csv` → 8. `feasibility_options.csv` → 9. `milestones.csv` → 10. `cost_entries.csv`
+
+1. `departments.csv`
+2. `locations.csv`
+3. `research_institutions.csv`
+4. `cost_centers.csv`
+5. `app_settings.csv`
+6. `email_templates.csv`
+7. `tv_requests.csv`
+8. `feasibility_options.csv`
+9. `milestones.csv`
+10. `cost_entries.csv`
 
 How: open the table → **Import → Import data from Excel/CSV** → map columns → Import.
 (Users must exist in the environment first – they come from Entra ID.)

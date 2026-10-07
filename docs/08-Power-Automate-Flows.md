@@ -228,6 +228,7 @@ Quoted 62,000 → Maria approves, then James Wilson approves → Funding Approve
 5. **List rows** – TV Requests In Execution where Expected Completion < today → email APPG owner.
 
 **Sample run (12-Oct-2026):**
+
 | TVID | Status | Days waiting | Action |
 |---|---|---|---|
 | TV-2026-00018 | Submitted | 3 | Reminder to APPG team |
@@ -316,6 +317,7 @@ Also set **Retry policy** (Settings of each action) for SharePoint/Outlook actio
 ## F09 – Upload Document (called from the app)
 
 **Trigger:** **Power Apps (V2)** with inputs:
+
 | Input | Type | Sample |
 |---|---|---|
 | TVID | Text | TV-2026-00015 |

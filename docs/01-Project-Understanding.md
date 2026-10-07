@@ -35,7 +35,7 @@ Managers see everything in Power BI.
 ## 4. The 6 phases (from slide "Business Process Flow")
 
 ```mermaid
-flowchart LR
+flowchart TB
   A[1. Request Initiation] --> B[2. APPG Review]
   B -->|More info| A
   B -->|Reject| X[Rejected]
