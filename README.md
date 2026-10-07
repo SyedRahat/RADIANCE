@@ -63,3 +63,16 @@ approval rules, email texts, report KPIs and master data are missing.
 These are exactly the things the PPT says will be finalised in Week 1–2
 ("Solution Blueprint"). See [docs/00-Is-The-Document-Enough.md](docs/00-Is-The-Document-Enough.md)
 for the full gap list and the questions to ask.
+
+## 5. PDF version (for reading, printing or sending)
+
+Every `.md` and `.csv` file in this repository is also available as a PDF in the `pdf/` folder:
+
+| What | Where |
+|---|---|
+| **Everything in one PDF** (cover, contents, all guides, all sample data, clickable links and bookmarks) | `pdf/LAM-TVRMS-Complete-Guide.pdf` |
+| One PDF per guide | `pdf/README.pdf` and `pdf/docs/00-...pdf` to `pdf/docs/13-...pdf` |
+| One PDF per sample data file (landscape) | `pdf/sample-data/*.pdf` |
+
+If you change any `.md` or `.csv` file, create the PDFs again with `tools/pdf-export/make-pdfs.sh`
+(it needs Node.js, pandoc, Python with pypdf and a Chromium browser – see the comments at the top of the script).
